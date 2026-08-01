@@ -1,16 +1,21 @@
-package com.example.primeiraaulaspringboot;
+package com.example.primeiraaulaspringboot.model;
 
 public class PessoaModel {
     private String nome;
     private int idade;
     private String cidadeNascimento;
 
+    //metodo construtor vazio
+    //sempre utilizado na requisição POST, PUT e DELETE
+
+    public PessoaModel(){};
+
     public PessoaModel(String nome, int idade, String cidadeNascimento) {
         this.nome = nome;
         this.idade = idade;
         this.cidadeNascimento = cidadeNascimento;
-    }
 
+    }
 
     public int getIdade() {
         return idade;
